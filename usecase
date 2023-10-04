@@ -1,0 +1,52 @@
+2 Spieler spielen gegeneinander. Zuerst ist der eine Spieler am Zug. Er wirft einen Stein in eine der Reihen. Der Stein fällt bis ganz unten.
+Dann ist der andere Spieler dran. Er wirft auch einen Stein in eine Reihe. Beide Steine haben unterschiedliche farben. wenn 4 steine glelicher farbe in einer Reihe/Spalte/Diagonale hat der Spieler gewonnen.
+Wenn das spielfeld voll ist und keiner gewonnen hat -> untentschieden.
+
+
+Kandidaten für klassen
+Spieler 
+    Name
+Spiel - controller
+    hasWinner()
+    start()
+    spielfeld erzeugen
+    anzahl runden
+    const short maxRounds = 42
+    const columns = 7
+    const row = 6
+
+    
+
+    
+Spielfeld (grid) -> speichert Steine
+Stein -> belegt feld mit farbe
+Farbe (bzw. gehört Spieler 1 / 2, oder X O)
+
+es muss spalten geben, damit man weiß bis wohin stein fällt
+
+Spalte  besser: array!
+   nummer 0-7
+   zeile[Steine] : 0-5
+   drop token (return zeile)
+   coinCount 
+   is full  
+
+Zeile -> map?
+    Nummer: 0-6
+    Status: O, X, empty
+    
+
+Diagonale
+
+
+Kandidaten für methoden
+Stein zufügen
+    von unten 
+check4gleiche -> damit anfangen! weil am schwersten
+    nur reihe spalte dia prüfen in die man stein geschmissen hat
+    (nur prüfen wenn min. 4 steine)
+    (wenn voll nur beim ersten mal prüfen)
+    Stein prüft selber nachbarn? -> ne. zb. bei dias muss er nach links oben, unten, rechts oben, unten...
+
+    
+
